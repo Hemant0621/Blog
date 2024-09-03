@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <div class="navbar">
+        <a href="./blog.html">
+          <div class="logo">B.log()</div>
+        </a>
+        <nav class="nav-links">
+          <ul>
+            <li><a href="#">Blog</a></li>
+            <li><a href="/about.html">About Us</a></li>
+            <li><a href="#">FAQ</a></li>
+          </ul>
+        </nav>
+        <a href="/signin.html"><button class="get-rise">Sign in</button></a>
+        <button class="burger-menu" onclick="toggleMenu()">&#9776;</button>
+      </div>
+      <div id="mobile-menu" class="mobile-menu">
+        <ul>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">FAQ</a></li>
+        </ul>
+      </div>
+    </header>
+    <div class="super">
+      <div class="container">
+        <h2>Sign Up</h2>
+        <form>
+          <input type="text" placeholder="Name" required />
+          <input type="text" placeholder="Username" required />
+          <input type="date" required />
+          <input type="password" placeholder="Password" required />
+          <input type="password" placeholder="Re-enter Password" required />
+          <input type="submit" value="Sign Up" />
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
