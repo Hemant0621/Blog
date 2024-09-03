@@ -1,72 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>About Us</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
 
-<body>
+  <body>
     <header>
-        <div class="navbar">
-            <a href="./index.html">
-                <div class="logo">B.log()</div>
-            </a>
-            <nav class="nav-links">
-                <ul>
-                    <li><a href="/index.html">Blog</a></li>
-                    <li><a href="/about.html">About Us</a></li>
-                    <li><a href="#">FAQ</a></li>
-                </ul>
-            </nav>
-            <button class="get-rise">Signin/Signup</button>
-            <button class="burger-menu" onclick="toggleMenu()">&#9776;</button>
-        </div>
-        <div id="mobile-menu" class="mobile-menu">
-            <ul>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Blog</a></li>
-                <li><a href="#">FAQ</a></li>
-            </ul>
-        </div>
+      <div class="navbar">
+        <a href="/index.html">
+          <div class="logo">B.log()</div>
+        </a>
+        <nav class="nav-links">
+          <ul>
+            <li><a href="/index.html">Blog</a></li>
+            <li><a href="/about.html">About Us</a></li>
+            <li><a href="#">FAQ</a></li>
+          </ul>
+        </nav>
+        <button class="get-rise">Signin/Signup</button>
+        <button class="burger-menu" onclick="toggleMenu()">&#9776;</button>
+      </div>
+      <div id="mobile-menu" class="mobile-menu">
+        <ul>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">FAQ</a></li>
+        </ul>
+      </div>
     </header>
 
     <main>
-        <section class="about-section">
-            <h1>About Our Website</h1>
-            <p>Welcome to our blog website! We are dedicated to bringing you insightful articles on a variety of topics,
-                ranging from health and wellness to technology and lifestyle. Our mission is to provide valuable content
-                that informs, inspires, and engages our readers.</p>
-            <p>At RISE, we believe in the power of knowledge and the importance of staying informed. Whether you're
-                looking for tips to improve your sleep, learn about the latest tech trends, or simply find inspiration,
-                our blog has something for everyone.</p>
-        </section>
+      <section class="about-section">
+        <h1>About Our Website</h1>
+        <p>
+          Welcome to our blog website! We are dedicated to bringing you
+          insightful articles on a variety of topics, ranging from health and
+          wellness to technology and lifestyle. Our mission is to provide
+          valuable content that informs, inspires, and engages our readers.
+        </p>
+        <p>
+          At RISE, we believe in the power of knowledge and the importance of
+          staying informed. Whether you're looking for tips to improve your
+          sleep, learn about the latest tech trends, or simply find inspiration,
+          our blog has something for everyone.
+        </p>
+      </section>
 
-        <section class="contact-section">
-            <h2>Contact Us</h2>
-            <form class="contact-form">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
+      <section class="contact-section">
+        <h2>Contact Us</h2>
+        <form class="contact-form">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required />
 
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
 
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" rows="5" required></textarea>
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
 
-                <button type="submit">Submit</button>
-            </form>
-        </section>
+          <button type="submit">Submit</button>
+        </form>
+      </section>
     </main>
 
     <script>
-        function toggleMenu() {
-            const menu = document.getElementById("mobile-menu");
-            menu.classList.toggle("open");
-        }
+      function toggleMenu() {
+        const menu = document.getElementById("mobile-menu");
+        menu.classList.toggle("open");
+      }
     </script>
-</body>
-
+  </body>
 </html>
