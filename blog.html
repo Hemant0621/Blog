@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Post</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <div class="navbar">
+            <a href="./index.html">
+                <div class="logo">B.log()</div>
+            </a>
+            <nav class="nav-links">
+                <ul>
+                    <li><a href="/index.html">Blog</a></li>
+                    <li><a href="/about.html">About Us</a></li>
+                    <li><a href="#">FAQ</a></li>
+                </ul>
+            </nav>
+            <button class="get-rise">Signin/Signup</button>
+            <button class="burger-menu" onclick="toggleMenu()">&#9776;</button>
+        </div>
+        <div id="mobile-menu" class="mobile-menu">
+            <ul>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">FAQ</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <article class="blog-post-details">
+            <h1>Does Aromatherapy Work for Sleep? Maybe. Here’s What We Know</h1>
+            <p class="post-meta">Posted on September 1, 2024 | 18 mins read</p>
+            <div class="post-image">
+                <img src="/images/women_relexing.jpeg" alt="Aromatherapy for Sleep">
+            </div>
+            <div class="post-content">
+                <p>Aromatherapy is widely used to improve sleep, but there’s not much evidence it’s actually effective.
+                    Sleep experts recommend focusing on sleep hygiene first.</p>
+                <h2>Understanding Aromatherapy</h2>
+                <p>Aromatherapy involves using essential oils and other aromatic compounds to enhance physical and
+                    emotional well-being. Lavender, chamomile, and valerian are some of the most common essential oils
+                    used to promote relaxation and sleep.</p>
+                <h2>The Science Behind Aromatherapy</h2>
+                <p>While many people swear by aromatherapy for better sleep, the scientific evidence supporting its
+                    efficacy is limited. Some studies suggest that essential oils like lavender can help reduce anxiety
+                    and improve sleep quality, but the results are not conclusive.</p>
+                <p>It’s important to approach aromatherapy with realistic expectations. While it may help some
+                    individuals relax and prepare for sleep, it’s not a guaranteed solution for sleep problems.</p>
+                <h2>Focus on Sleep Hygiene</h2>
+                <p>Experts agree that good sleep hygiene is the key to improving sleep quality. This includes
+                    maintaining a regular sleep schedule, creating a comfortable sleep environment, and avoiding
+                    stimulants like caffeine before bed.</p>
+                <p>Incorporating aromatherapy into your bedtime routine can be a soothing addition, but it should not
+                    replace evidence-based sleep practices.</p>
+            </div>
+        </article>
+    </main>
+
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById("mobile-menu");
+            menu.classList.toggle("open");
+        }
+    </script>
+</body>
+
+</html>

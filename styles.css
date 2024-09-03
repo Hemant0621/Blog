@@ -6,6 +6,11 @@ body {
     color: #fff;
 }
 
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
 .navbar {
     background-color: #1a1a1a;
     padding: 10px 20px;
@@ -36,6 +41,44 @@ body {
     text-decoration: none;
     font-size: 16px;
 }
+
+.burger-menu {
+    display: none;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+#mobile-menu {
+    display: none;
+    background-color: #1a1a1a;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+}
+
+#mobile-menu.open {
+    display: block;
+}
+
+#mobile-menu ul {
+    list-style: none;
+    padding: 10px 0;
+    margin: 0;
+}
+
+#mobile-menu ul li a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 10px 0;
+}
+
+
 
 .get-rise {
     background-color: #5a189a;
@@ -123,4 +166,169 @@ footer {
     width: 95%;
     text-align: center;
     margin: 2rem;
+}
+
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+    }
+
+    .burger-menu {
+        display: block;
+    }
+
+    .blog-post {
+        flex-direction:column-reverse;
+    }
+
+    .post-content {
+        text-align: left;
+    }
+
+    .post-content h2 {
+        font-size: 20px;
+    }
+
+    .post-content p {
+        font-size: 14px;
+    }
+
+    .post-image img {
+        width: 100%;
+    }
+}
+
+
+
+/*----------------------------- Aboutus Page --------------------- */
+
+.about-section, .contact-section {
+    background-color: #1a1a1a;
+    padding: 40px 20px;
+    border-radius: 10px;
+    max-width: 800px;
+    margin: 20px auto;
+    color: white;
+    text-align: center;
+}
+
+.about-section h1, .contact-section h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.about-section p {
+    font-size: 16px;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.contact-section h2 {
+    font-size: 24px;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact-form label {
+    font-size: 16px;
+    text-align: left;
+}
+
+.contact-form input, .contact-form textarea {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #333;
+    color: white;
+    font-size: 16px;
+}
+
+.contact-form button {
+    background-color: #5a189a;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.contact-form button:hover {
+    background-color: #6a2ba2;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .about-section, .contact-section {
+        padding: 20px 10px;
+    }
+    
+    .contact-form {
+        gap: 10px;
+    }
+}
+
+/*----------------------------- Blog Page --------------------- */
+
+.blog-post-details {
+    background-color: #1a1a1a;
+    padding: 40px 20px;
+    max-width: 800px;
+    margin: 20px auto;
+    color: white;
+    border-radius: 10px;
+}
+
+.blog-post-details h1 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.post-meta {
+    font-size: 14px;
+    color: #999;
+    margin-bottom: 20px;
+}
+
+.post-image img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.post-content h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.post-content p {
+    font-size: 16px;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .blog-post-details {
+        padding: 20px 10px;
+    }
+
+    .blog-post-details h1 {
+        font-size: 24px;
+    }
+
+    .post-content h2 {
+        font-size: 20px;
+    }
+
+    .post-content p {
+        font-size: 14px;
+    }
 }
