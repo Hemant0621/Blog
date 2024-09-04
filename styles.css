@@ -88,6 +88,7 @@ a{
     border-radius: 20px;
     cursor: pointer;
     font-size: 16px;
+    margin: 0 2rem;
 }
 
 .get-rise:hover{
@@ -319,16 +320,92 @@ footer {
     .blog-post-details {
         padding: 20px 10px;
     }
-
+    
     .blog-post-details h1 {
         font-size: 24px;
     }
-
+    
     .post-content h2 {
         font-size: 20px;
     }
-
+    
     .post-content p {
         font-size: 14px;
+    }
+}
+
+/*----------------------------- Post Page --------------------- */
+
+.post-blog-form {
+    background-color: #1a1a1a;
+    padding: 40px 20px;
+    max-width: 800px;
+    margin: 20px auto;
+    color: white;
+    border-radius: 10px;
+}
+
+.post-blog-form h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.form-group input[type="text"],
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.form-group input[type="file"] {
+    font-size: 16px;
+    color: white;
+}
+
+button[type="submit"] {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .post-blog-form {
+        padding: 20px 10px;
+    }
+
+    .post-blog-form h1 {
+        font-size: 24px;
+    }
+
+    .form-group label,
+    .form-group input[type="text"],
+    .form-group textarea {
+        font-size: 14px;
+    }
+
+    button[type="submit"] {
+        width: 100%;
     }
 }
