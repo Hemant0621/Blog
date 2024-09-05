@@ -80,7 +80,6 @@ a {
 }
 
 .get-rise {
-<<<<<<< HEAD
     background-color: #5a189a;
     color: #fff;
     padding: 8px 16px;
@@ -89,15 +88,6 @@ a {
     cursor: pointer;
     font-size: 16px;
     margin: 0 2rem;
-=======
-  background-color: #5a189a;
-  color: #fff;
-  padding: 8px 16px;
-  border: none;
-  border-radius: 20px;
-  cursor: pointer;
-  font-size: 16px;
->>>>>>> e20d1cca69d5365adb6bb3e6253ff9c5524454d5
 }
 
 .get-rise:hover {
@@ -327,23 +317,6 @@ footer {
 
 /* Responsive Styles */
 @media (max-width: 768px) {
-<<<<<<< HEAD
-    .blog-post-details {
-        padding: 20px 10px;
-    }
-    
-    .blog-post-details h1 {
-        font-size: 24px;
-    }
-    
-    .post-content h2 {
-        font-size: 20px;
-    }
-    
-    .post-content p {
-        font-size: 14px;
-    }
-=======
   .blog-post-details {
     padding: 20px 10px;
   }
@@ -417,7 +390,6 @@ footer {
 .container div {
   display: flex;
   justify-content: space-between;
->>>>>>> e20d1cca69d5365adb6bb3e6253ff9c5524454d5
 }
 
 /*----------------------------- Post Page --------------------- */
